@@ -1,11 +1,14 @@
-import { useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import CubeContainer from './components/cube/CubeContainer';
 import './App.css'
 
 function App() {
   return (
-    <>
-      <h1>Hello World</h1>
-    </>
+    <Routes>
+      <Route path="/" element={<CubeContainer />}>
+
+      </Route>
+    </Routes>
   );
 }
 
